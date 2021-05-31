@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			/*border:1px solid red;*/
+			margin:0;
+			padding:0;
+		}
+		
+		.title_small{
+			margin-top: 10px;
+			font-size: 13px;
+		}
+		.title_yellow{
+			color:#f4c520;
+			margin:10px 0 30px 0;
+			font-family: HY견고딕;
+		}
+		.title_green{
+			color:#239347;
+		}
+		/*div{
+			display: inline-block;
+		}*/
+		.promise_list{
+			position: relative;
+			display: inline-block;
+			margin:10px;
+			/*overflow: hidden;*/
+		}
+		.promise_image{
+			/*z-index: 0;*/
+			position: absolute;
+		}
+		.promise_text{
+			width:230px;
+			height: 0px;
+			/*background-image: url(./img/eggmayo.png);
+			background-size: 300px 150px;
+			background-repeat: no-repeat;
+			background-position: 0px 20px;*/
+			text-align: center;
+			color:rgba(0,0,0,0);
+			/*z-index: 10;*/
+			position: relative;
+			background-color:#239347;
+			/*border-radius: 80px;*/
+			/*padding: 30px 0px;*/
+			transition: height 1s, color 1s;
+			display: inline-block;
+			
+		}
+		.promise_text:hover{
+			height: 150px;
+			color:white;
+		}
+		.promise_image{
+			z-index: 0;
+		}
+		.promise_num{
+			width:55px;
+			height: 30px;
+			background-color: #239347;
+			position: absolute;
+			top:0;
+			left:85px;
+			color:white;
+			font-size: 20px;
+		}
+		.promise_text_title{
+			/*color:#3d3d3d;*/
+			padding-top:55px;
+		}
+		.promise_text_detail{
+			/*color:#676767;*/
+			padding:10px 0 20px 0;
+			font-size: 13px;
+		}
+	</style>
+</head>
+<body>
+<center>
+	<p class=title_small>써브웨이만이 가지고 있는 세가지 원칙</p>
+	<h1 class=title_yellow><span class=title_green>SUBWAY</span> 3 RULE</h1>
+
+	<div class="promise_list">
+		<img class=promise_image src='./img/food.jpg' width=230px height="150px">
+		<div class="promise_text">
+			<h3 class='promise_text_title'>엄격하게 관리되는 재료</h3>
+			<p class=promise_text_detail>야채들은 엄격한 규율에 따라 <br>세척 과정을 거치고 있습니다.</p>
+		</div>
+		<p class=promise_num>1</p>
+	</div>
+
+	<div class="promise_list">
+		<img class=promise_image src='./img/bread.jpg' width=230px height="150px">
+		<div class="promise_text">
+			<h3 class='promise_text_title'>특별한 빵</h3>
+			<p class=promise_text_detail>각 매장에서 매일 직접 구워 낸 <br>신선한 샌드위치 빵을 제공합니다.</p>
+		</div>
+		<p class=promise_num>2</p>
+	</div>
+
+	<div class="promise_list">
+		<img class=promise_image src='./img/environment.jpg' width=230px height="150px">
+		<div class="promise_text">
+			<h3 class='promise_text_title'>환경을 위한 노력</h3>
+			<p class=promise_text_detail>매장 내 일회용품 사용을 <br>줄여나가고 있습니다.</p>
+		</div>
+		<p class=promise_num>3</p>
+	</div>
+
+	<div class="promise_list">
+		<img class=promise_image src='./img/fresh.jpg' width=230px height="150px">
+		<div class="promise_text">
+			<h3 class='promise_text_title'>신선함을 위한 노력</h3>
+			<p class=promise_text_detail>건강한 먹거리를 제공하기 위해 <br>노력하고 있습니다.</p>
+		</div>
+		<p class=promise_num>4</p>
+	</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		@keyframes first{
+			0%{transform: translateX(0px); width:1500px; }
+			10%{transform: translateX(0px); width:1500px; }
+			23%{transform: translateX(-100px); width:0px; }
+			76%{transform: translateX(1600px); width:0px; }
+			89%{transform: translateX(0px); width:1500px;}
+			100%{transform: translateX(0px); width:1500px;}
+		}
+		@keyframes secound{
+			0%{transform: translateX(400px); width:0px; }
+			10%{transform: translateX(400px); width:0px; }
+			23%{transform: translateX(0px); width:1500px; }
+			43%{transform: translateX(0px); width:1500px; }
+			56%{transform: translateX(-100px); width:0px; }
+			100%{transform: translateX(-100px); width:0px; }
+		}
+		@keyframes third{
+			0%{transform: translateX(400px); width:0px; }
+			43%{transform: translateX(400px); width:0px; }
+			56%{transform: translateX(0px); width:1500px; }
+			76%{transform: translateX(0px); width:1500px; }
+			89%{transform: translateX(-1600px); width:0px; }
+			100%{transform: translateX(-1600px); width:0px;}
+		}
+		#banner{
+			display: inline-block;
+		}
+		#banner01{
+			animation-name: first;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+		}
+		#banner02{
+			animation-name: secound;
+			animation-duration: 20s;
+			animation-iteration-count: infinite; 
+		}
+		#banner03{
+			animation-name: third;
+			animation-duration: 20s;
+			animation-iteration-count: infinite; 
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<div id=banner>
+			<iframe id=banner01 src="banner_abocado.html"width=900px height=400px scrolling="no" frameborder="0"></iframe>
+			<iframe id=banner02 src="banner_shrimp.html"width=900px height=400px scrolling="no" frameborder="0"></iframe>
+			<iframe id=banner03 src="banner_mint.html"width=900px height=400px scrolling="no" frameborder="0"></iframe>
+		</div>
+	</center>
+</body>
+</html>
