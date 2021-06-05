@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		@import url(step_style.css);
+		.more-1{
+			width:80px;
+			height: 40px;
+			background-image: url(./img/step4-1-1.png);
+			background-size: 80px 40px;
+			background-repeat: no-repeat;
+			display: inline-block;
+		}
+		.more-1:hover{
+			background-image: url(./img/step4-1-2.png);
+		}
+		.more-1.more-2{
+			background-image: url(./img/step4-2-1.png);
+		}
+		.more-1.more-2:hover{
+			background-image: url(./img/step4-2-2.png);
+		}
+
+
+
+		.num{
+			width:85px;
+			height: 85px;
+			background-image: url(./img/step_num1-1.png);
+			background-size: 85px 85px;
+			background-repeat: no-repeat;
+			display: inline-block;
+			margin:50px 20px;
+		}
+		.num.step2{
+			background-image: url(./img/step_num2-1.png);
+		}
+		.num.step3{
+			background-image: url(./img/step_num3-1.png);
+		}
+		.num.step4{
+			background-image: url(./img/step_num4-2.png);
+		}
+		.num.step5{
+			background-image: url(./img/step_num5-1.png);
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="step_animation.css">
+</head>
+<body>
+<center>
+	<a href=step1.html target="step_content"><p class='num'></p></a>
+	<a href=step2.html target="step_content"><p class='num step2'></p></a>
+	<a href=step3.html target="step_content"><p class='num step3'></p></a>
+	<a href=step4.html target="step_content"><p class='num step4'></p></a>
+	<a href=step5.html target="step_content"><p class='num step5'></p></a>
+	<br>
+
+	
+	<div class=after>
+		<img class=image src='./img/source.png' width=600px height=400px>
+		<div class=text>
+			<p class=step>step 4</p>
+			<h2>야채&소스 선택</h2>
+			<p class=content>
+				원하지 않는 야채는 빼고<br>
+				좋아하는 야채는 더하세요.<br>
+				취향에 맞는 소스도 선택해주세요.<br>
+			</p>
+			<div id=more>
+				<a href=><div class=more-1></div></a>
+				<a href=><div class='more-1 more-2'></div></a>
+			</div>
+		</div>
+	</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			/*border:1px solid red;*/
+			margin:0;
+			padding: 0;
+		}
+		section{
+			background-color: #f6f6f6;
+		}
+		h1{
+			padding:80px 0 20px 0;
+			font-size: 40px;
+			font-weight: 900;
+		}
+		
+
+
+		.menu{
+			border-top:1px solid #999999;
+			border-bottom:1px solid #999999;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="content_menu.css">
+</head>
+<body>
+<center>
+	<nav class=menu>
+		<ul>
+			<li id=selected>이벤트/프로모션</li>
+			<li>뉴스/공지사항</li>
+			<li>광고영상</li>
+		</ul>
+	</nav>
+
+	<section>
+		<h1>이벤트</h1>
+		<iframe name=event src="event_all.html" width=2000px height=900px scrolling="no" frameborder="0"></iframe>
+	</section>
+	
+	<footer>
+        <iframe name=footer src="footer.html" width=2000px height=180px frameborder="0" scrolling="no"></iframe>
+    </footer>
+</center>
+</body>
+</html>

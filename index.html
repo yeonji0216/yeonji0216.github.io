@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    position: relative;
+    /*border:1px solid red;*/
+}
+ .clear{
+    clear:both;
+}
+#logo{
+    margin: 50px;
+}
+
+.menu{
+    width:100px;
+    margin: 50px 45px 15px 45px;
+    padding: 10px;
+    display: inline-block;
+    color: #222;
+    /*font-weight: bold;*/
+    font-size: 20px;
+    font-family: HY견고딕;
+}
+
+.down{
+    position: relative;
+    display: inline-block;
+}
+
+.down-content{
+    width:3000px;
+    height:280px;
+    position: absolute;
+    left: -1070px;
+    display: none;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 10;
+}
+
+.down-content a{
+    display: block;
+    color: #888;
+    padding: 15px;
+    text-decoration: none;
+}
+.down-content th{
+    width: 210px;
+}
+.down-content a:hover {
+    color: #239347; 
+    text-decoration: underline;
+}
+.down:hover .down-content {
+    display: block;
+}
+
+
+#login{
+    display: inline-block;
+    margin:35px;
+}
+#login li{
+    padding-left:40px;
+    list-style-type: none;
+    display: inline;
+}
+#login a{
+    text-decoration: none;
+    color:black;
+}
+</style>
+</head>
+<body>
+    <center>
+        <header>
+            <a id=logo href='index_section.html' target=section><img src='./img/logo.jpg' width=250px height=40px></a>
+
+            <nav class="down">
+                <div class="menu">써브웨이</div>
+                <div class="menu">메뉴</div>
+                <div class="menu">이용방법</div>
+                <div class="menu">새소식</div>
+                <div class="down-content">
+                    <table border=0>
+                        <tr>
+                            <th><a href=''>써브웨이의 역사</a></th>
+                            <th><a href='menu.html' target="section">샌드위치</a></th>
+                            <th><a href='use1.html' target=section>써브웨이 이용방법</a></th>
+                            <th><a href=''>뉴스/공지사항</a></th>
+                        </tr>
+
+                        <tr>
+                            <th><a href='mind.html' target="section">써브웨이의 약속</a></th>
+                            <th><a href=''>랩/기타</a></th>
+                            <th><a href=''>단체메뉴 이용방법</a></th>
+                            <th><a href='event.html' target="section">이벤트</a></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th><a href=''>찹샐러드</a></th>
+                            <th><a href=''>APP 이용방법</a></th>
+                            <th><a href=''>광고영상</a></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th><a href=''>아침메뉴</a></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th><a href=''>단체메뉴</a></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </table>
+                </div>
+            </nav>
+
+            <ul id=login>
+                <li><a href=''>로그인</a></li>
+                <li><a href=''>회원가입</a></li>
+            </ul>
+        </header>
+
+        <section>
+            <iframe name=section src="index_section.html" width=2000px height="2500px" scrolling="no" frameborder="0"></iframe>
+        </section>
+    </center>
+</body>
+</html>

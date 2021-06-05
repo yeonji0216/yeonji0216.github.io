@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			/*border:1px solid red;*/
+			margin:0;
+			padding:0;
+		}
+		.ment{
+			background-color: white;
+			height: 150px;
+		}
+
+		.ment h1{
+			color:#62ce08;
+			font-size:50px;
+			margin:50px 0 10px 0;
+		}
+		#green{
+			color:#239347;
+		}
+		
+		.list01{
+			/*margin:20px;*/
+			background-color: #f6f6f6;
+			padding:20px 20px 0 20px;
+		}
+		.list02{
+			background-color:white;
+			padding:20px 20px 0 20px;
+		}
+		.img{
+			display: inline-block;
+		}
+		@keyframes right{
+			from{transform: translateX(100px); opacity: 0%}
+			to{transform: translateX(0px); opacity: 100%}
+		}
+		.text01{
+			animation-name: right;
+			animation-duration: 1s;
+			animation-iteration-count: 1;
+			position: relative;
+			display: inline-block;
+			width:500px;
+			text-align: left;
+		}
+		@keyframes left{
+			from{transform: translateX(-100px); opacity: 0%}
+			to{transform: translateX(0px); opacity: 100%}
+		}
+		.text01.text02{
+			text-align: right;
+			animation-name: left;
+		}
+		.title01{
+			margin:20px;
+			font-size: 28px;
+		}
+		.title_num{
+			font-size: 60px;
+			color:#239347;
+			margin:10px;
+			text-shadow: 3px 3px #f4c521;
+		}		
+		.exp{
+			margin:20px 20px 50px 20px;
+			font-size: 15px;
+			line-height: 25px;
+		}
+		.bg_text01{
+			
+			display: inline-block;
+			color:white;
+			font-size:80px;
+			position: relative;
+		}
+		.bg_text02{
+
+			display: inline-block;
+			color:#f6f6f6;
+			font-size:80px;
+			position: relative;
+		}
+		
+
+		.menu{
+			border-top:1px solid #999999;
+			border-bottom:1px solid #999999;
+		}
+	</style>
+	
+	<link rel="stylesheet" type="text/css" href="content_menu.css">
+</head>
+<body>
+<center>
+	<nav class=menu>
+		<ul>
+			<li>써브웨이 역사</li>
+			<li id=selected>써브웨이 약속</li>
+		</ul>
+	</nav>
+
+	<section>
+		<div class=ment>
+			<h1>SEARCH <span id=green>FOR BETTER</span></h1>
+			<p>우리는 더 좋은 써브웨이를 위해 매일 노력합니다.</p>
+		</div>
+
+
+		<div class='list01'>
+			<div class=img>
+				<img src='./img/food.jpg' width=600px height="400px">
+			</div>
+			<div class=text01>
+				<h2 class=title01><span class=title_num>1</span>엄격하게 관리되는 우리의 재료</h2>
+				<p class=exp>
+					매일 매장에 배송되는 신선한 야채들은 <br>각 매장에서 정성스럽게 손질됩니다.<br>
+					엄격한 규율에 따라 세척 과정을 거친 야채들은<br>
+					당일 판매되는 양만큼 준비됩니다.
+				</p>
+
+				<br>
+
+				<h1 class=bg_text01>Our Veggies</h1>
+			</div>
+		</div>
+
+		<div class='list02'>
+			<div class='text01 text02'>
+				<h2 class=title01><span class=title_num>2</span>써브웨이만의 특별한 빵</h2>
+				<p class='exp'>
+					1983년부터 써브웨이는<br>
+					각 매장에서 매일 직접 구워 낸 신선한 샌드위치 빵을 제공합니다.<br>
+					신선한 샌드위치는 신선한 빵에서 시작된다는 철학으로<br>
+					매일 최상의 샌드위치 빵을 제공하기 위해 노력하고 있습니다.
+				</p>
+				<br>
+				<h1 class=bg_text02>Our Bread</h1>
+			</div>
+			<img src='./img/bread.jpg' width=600px height="400px">
+		</div>
+
+		<div class='list01'>
+			<img src='./img/environment.jpg' width=600px height="400px">
+			<div class=text01>
+				<h2 class=title01><span class=title_num>3</span>환경을 위한 우리의 노력</h2>
+				<p class=exp>
+					써브웨이의 샐러드 보울은 95% 재생 용기로 만들어졌으며,<br>
+					매장 내 일회용품 사용을 줄여 나가고 있습니다.<br>
+					환경을 늘 생각하는 브랜드가 되기 위해<br>
+					지속적으로 노력하고 있습니다.
+				</p>
+				<br>
+				<h1 class=bg_text01>Our Impact</h1>
+			</div>
+		</div>
+
+		<div class='list02'>
+			<div class='text01 text02'>
+				<h2 class=title01><span class=title_num>4</span>신선함을 위한 우리의 노력</h2>
+				<p class='exp'>
+					써브웨이 빵은 인위적 당분이 함유되어 있지 않으며<br>
+					비타민과 칼슘을 강화하고 나트륨을 줄이는 등<br>
+					건강한 먹거리를 제공하기 위해 노력하고 있습니다.
+				</p>
+				<br>
+				<h1 class=bg_text02>Our Fresh</h1>
+			</div>
+			<img src='./img/fresh.jpg' width=600px height="400px">
+		</div>
+	</section>
+
+	<footer>
+        <iframe name=footer src="footer.html" width=2000px height=180px frameborder="0" scrolling="no"></iframe>
+    </footer>
+</center>
+</body>
+</html>

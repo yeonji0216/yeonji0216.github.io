@@ -1,0 +1,21 @@
+
+<style type="text/css">
+	.menu{
+		width:2000px;
+		height: 70px;
+		margin: 20px;
+	}
+	.menu li{
+		/*border:1px solid red;*/
+		list-style-type: none;
+		display: inline-block;
+		margin: 25px;
+		color:#99999c;
+		font-weight: 500;
+	}
+	#selected{
+		color:#239347;
+		font-weight: bold;
+	}
+	
+</style>

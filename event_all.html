@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			/*border:1px solid red;*/
+			margin:0;
+			padding: 0;
+		}
+		tr{
+			height: 350px;
+		}
+		td{
+			width:400px;
+		}
+		.menu_bar{
+			width:620px;
+			height: 55px;
+			margin:50px;
+		}
+		.bar01{
+			display: inline-block;
+			width:200px;
+			height: 40px;
+			border-radius: 30px 0 0 30px;
+			background-color:#58006c ;
+			color:white;
+			font-weight: bold;
+			font-size: 15px;
+			padding-top:15px;
+		}
+		.bar01.bar02{
+			background-color:#fff ;
+			color:gray;
+			border-radius: 0;
+		}
+		.bar01.bar03{
+			background-color:#fff ;
+			color:gray;
+			border-radius: 0 30px 30px 0;
+		}
+		
+		.menu_bar{
+			width:620px;
+			height: 55px;
+			margin:50px;
+		}
+		.bar01{
+			display: inline-block;
+			width:200px;
+			height: 40px;
+			border-radius: 30px 0 0 30px;
+			background-color:#58006c ;
+			color:white;
+			font-weight: bold;
+			font-size: 15px;
+			padding-top:15px;
+		}
+		.bar01.bar02{
+			background-color:#fff ;
+			color:gray;
+			border-radius: 0;
+		}
+		.bar01.bar03{
+			background-color:#fff ;
+			color:gray;
+			border-radius: 0 30px 30px 0;
+		}
+		.content{
+			display: inline-block;
+			width:350px;
+			height: 310px;
+			border: 10px solid rgb(244,197,34,0);
+			transition: border 0.5s;
+			margin:10px;
+		}
+		.content:hover{
+			border: 10px solid rgb(244,197,34,1);
+		}
+		.text{
+			position: relative;
+			top:-5px;
+			width:350px;
+			height: 130px;
+			background-color:white;
+		}
+		.text h3{
+			float:left;
+			padding:20px;
+			margin-top:10px;
+			color:black;
+		}
+		.text p{
+			float:left;
+			padding: 0px 20px;
+			margin: 10px 0;
+			color:#239347;
+			font-weight: bold;
+		}
+		/*.text.end h3{
+			color:gray;
+		}*/
+		.text.end p{
+			color:gray;
+		}
+	</style>
+</head>
+<body>
+<center>
+	<section>
+		<div class=menu_bar>
+			<a href='event_all.html' target="event"><p class=bar01>전체</p></a>
+			<a href='event_ing.html' target="event"><p class='bar01 bar02'>진행중인 이벤트</p></a>
+			<a href='event_end.html' target="event"><p class='bar01 bar03'>종료된 이벤트</p></a>
+		</div>
+
+
+		<table border=0>
+			<tr>
+				<td>
+					<div class=content>
+						<a href=''target=event>
+							<img class=small src='./img/event01.png' width=350px height="180px">
+							<div class=text>
+								<h3>스파이시 쉬림프</h3>
+								<p class=date>21.05.04 ~ 2021.06.30</p>
+							</div>
+						</a>
+					</div>
+				</td>
+
+				<td>
+					<div class=content>
+						<a href=''target=event>
+							<img class=small src='./img/event02.jpg' width=350px height="180px">
+							<div class=text>
+								<h3>이달의 썹!프라이즈!</h3>
+								<p class=date>21.05.04 ~ 2021.06.30</p>
+							</div>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div class=content>
+						<a href=''target=event>
+							<img class=small src='./img/event03.jpg' width=350px height="180px">
+							<div class=text>
+								<h3>써브웨이 아침메뉴!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+								<p class=date>20.11.16 ~ </p>
+							</div>
+						</a>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class=content>
+						<a href=''target=event>
+							<img class=small src='./img/event04.jpg' width=350px height="180px">
+							<div class=text>
+								<h3>말이 안 나올 땐 손으로 주문하자!</h3>
+								<p class=date>20.10.16 ~ </p>
+							</div>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div class=content>
+						<a href=''target=event>
+							<img class=small src='./img/end01.jpg' width=350px height="180px">
+							<div class='text end'>
+								<h3>써브웨이 에그마요 3종</h3>
+								<p class=date>이벤트가 종료되었습니다. </p>
+							</div>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div class=content>
+						<a href=''target=event>
+							<img class=small src='./img/end02.jpg' width=350px height="180px">
+							<div class='text end'>
+								<h3>이달의 썹!프라이즈!</h3>
+								<p class=date>이벤트가 종료되었습니다. </p>
+							</div>
+						</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+</center>
+</body>
+</html>

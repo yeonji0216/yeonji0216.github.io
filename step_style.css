@@ -1,0 +1,57 @@
+<style type="text/css">
+		*{
+			/*margin:0;
+			padding:0;*/
+			/*border: 1px solid red;*/
+		}
+		body{
+			background-color: #f6f6f6;
+		}
+		.image{
+			margin-top:50px;
+		}
+		.text{
+			display: inline-block;
+			width:300px;
+			height:400px;
+			padding:20px;
+			background-color: white;
+			border: solid 2px #b1b1b1;
+			border-radius: 10px;
+			position: relative;
+			top:-70px;
+		}
+		.step{
+			color:#239347;
+			font-weight: bold;
+			font-size: 20px;
+			margin:50px 10px 10px 10px;
+		}
+		h2{
+			margin: 5px 10px;
+		}
+		.content{
+			color:#666;
+			margin: 30px 10px;
+		}
+		#more{
+			margin-top: 50px;
+		}
+		.more-1{
+			width:105px;
+			height: 40px;
+			background-image: url(./img/step1-1-1.png);
+			background-size: 105px 40px;
+			background-repeat: no-repeat;
+			display: inline-block;
+		}
+		.more-1.more-2{
+			background-image: url(./img/step1-2-1.png);
+		}
+		.more-1:hover{
+			background-image: url(./img/step1-1-2.png);
+		}
+		.more-1.more-2:hover{
+			background-image: url(./img/step1-2-2.png);
+		}
+</style>

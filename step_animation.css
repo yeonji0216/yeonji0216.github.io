@@ -1,0 +1,21 @@
+	<style type="text/css">
+		*{
+			border:1px solid red;
+		}
+		.content{
+			display: inline-block;
+			position: relative;
+		}
+		
+		@keyframes after{
+			0%{ opacity: 0%;}
+			30%{ opacity: 0%;}
+			100%{ opacity: 100%;}
+		}
+		.after{
+			/*display: inline-block;*/
+			animation-name: after;
+			animation-duration: 1.5s;
+			animation-iteration-count: 1;
+			display: inline-block;		}
+	</style>

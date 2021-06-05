@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		@import url(step_style.css);
+		.num{
+			width:85px;
+			height: 85px;
+			background-image: url(./img/step_num1-2.png);
+			background-size: 85px 85px;
+			background-repeat: no-repeat;
+			display: inline-block;
+			margin:50px 20px;
+		}
+		.num.step2{
+			background-image: url(./img/step_num2-1.png);
+		}
+		.num.step3{
+			background-image: url(./img/step_num3-1.png);
+		}
+		.num.step4{
+			background-image: url(./img/step_num4-1.png);
+		}
+		.num.step5{
+			background-image: url(./img/step_num5-1.png);
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="step_animation.css">
+</head>
+<body>
+<center>
+	<a href=step1.html target="step_content"><p class='num'></p></a>
+	<a href=step2.html target="step_content"><p class='num step2'></p></a>
+	<a href=step3.html target="step_content"><p class='num step3'></p></a>
+	<a href=step4.html target="step_content"><p class='num step4'></p></a>
+	<a href=step5.html target="step_content"><p class='num step5'></p></a>
+	<br>
+
+
+	<div class=after>
+		<img class=image src='./img/abocado.png' width=600px height=400px>
+		<div class=text>
+			<p class=step>step 1</p>
+			<h2>메뉴 선택</h2>
+			<p class=content>
+				메뉴를 고르세요.<br>
+				샌드위치(15cm 또는 30cm)와<br>
+				찹샐러드 중 선택 가능합니다.<br>
+			</p>
+			<div id=more>
+				<a href=><div class=more-1></div></a>
+				<a href=><div class='more-1 more-2'></div></a>
+			</div>
+		</div>
+	</div>
+</center>
+</body>
+</html>

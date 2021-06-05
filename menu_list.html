@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			/*border:1px solid red;*/
+			margin:0;
+			padding:0;
+		}
+		body{
+			background-color: #f6f6f6;
+		}
+		@keyframes ment{
+			from{transform: translateX(-100px); opacity: 0%;}
+			to{transform:translateX(0px); opacity: 100%;}
+		}
+		.ment{
+			animation-name: ment;
+			animation-duration: 1s;
+			animation-iteration-count: 1;
+			background-color: #e95b1d;
+			height: 300px;
+			margin-bottom: 100px;
+			color:white;
+		}
+
+		.ment>h1{
+			font-size:70px;
+			margin:0px 0 10px 0;
+			padding-top:70px;
+		}
+		.list{
+			background-color: white;
+			width:350px;
+			height: 300px;
+			position: relative;
+			display: inline-block;
+			margin:15px;
+			box-shadow: 0px 0px 10px #f1f1f1;
+		}
+		.index{
+			position: absolute;
+			top:10px;
+			float:left;
+			z-index: 10;
+		}
+		.before{
+			/*z-index: 0;*/
+			position: absolute;
+			background-image: url(./img/shrimp.png);
+			background-size: 270px 180px;
+			background-repeat: no-repeat;
+			background-position: 50% 10%;
+			width:350px;
+			height: 100px;
+			padding-top:180px;
+		}
+		.before_big{
+
+		}
+		.before_small{
+			font-weight: normal;
+			margin:5px;
+		}
+		.before_calo{
+			color:#f4c521;
+			margin:5px;
+		}
+		.after{
+			width:350px;
+			height: 0px;
+			text-align: center;
+			color:rgba(0,0,0,0);
+			position: relative;
+			background-color:#239347;
+			transition: height 1s, color 1s;
+			display: inline-block;
+			/*z-index: 20;*/
+			
+		}
+		.list:hover .after{
+			height: 300px;
+			color:white;
+		}
+		.detail{
+			background-image: url(./img/detail03.png);
+			background-size: 0px 0px;
+			background-repeat: no-repeat;
+			background-position: 50%;
+			opacity: 0%;
+			width: 350px;
+			height: 50px;
+		}
+		.list:hover .detail{
+			transition: opacity 1s, background-size 1s;
+			background-size: 50px 50px;
+			opacity: 100%;
+		}
+		.after_big{
+			margin-top: 70px;
+		}
+		.after_small{
+			font-weight: normal;
+			margin:5px;
+		}
+		.after_detail{
+			margin:10px;
+			font-size: 13px;
+		}
+		.before.before01{
+			background-image: url(./img/shrimp_avocado.png);
+		}
+		.before.before02{
+			background-image: url(./img/shrimp.jpg);
+		}
+		.before.before03{
+			background-image: url(./img/eggmayo.jpg);
+		}
+		.before.before04{
+			background-image: url(./img/bmt.jpg);
+		}
+		.before.before05{
+			background-image: url(./img/blt.jpg);
+		}
+		.before.before06{
+			background-image: url(./img/meatball.png);
+		}
+		.before.before07{
+			background-image: url(./img/ham.jpg);
+		}
+		.before.before08{
+			background-image: url(./img/bmt.jpg);
+		}
+		.before.before09{
+			background-image: url(./img/chicken.png);
+		}
+		.before.before10{
+			background-image: url(./img/steak.jpg);
+		}
+		.before.before11{
+			background-image: url(./img/spicy.jpg);
+		}
+		.menu{
+			border-top:1px solid #999999;
+			border-bottom:1px solid #999999;
+			background-color: white;
+		}
+	</style>
+</head>
+<body>
+<center>
+	<div class=ment>
+		<h1>Sandwich</h1>
+		<p>전세계 넘버원 브랜드 Subway!<br>50년 전통의 세계 최고의 샌드위치를 맛보세요!</p>
+	</div>
+	<div class="list">
+		<img class=index src='./img/new.png' width=80px height=35px>
+		<div class=before>
+			<h2 class='before_big'>스파이시 쉬림프</h2>
+			<h4 class=before_small>Spicy Shrimp</h4>
+			<h4 class=before_calo>233kcal</h4>
+		</div>
+
+		 <div class="after">
+			<h2 class='after_big'>스파이시 쉬림프</h2>
+			<h4 class=after_small>Spicy Shrimp</h4>
+			<p class=after_detail>
+				빨간맛에 빠진 쉬림프!<br>
+				이국적인 매콤함이 더해진 시즌 한정 스파이시 쉬림프!
+			</p>
+			<a href='' target=menu><p class=detail></p></a>
+		</div>
+	</div>
+
+
+	<div class="list">
+		<img class=index src='./img/new.png' width=80px height=35px>
+		<div class='before before01'>
+			<h2 class='before_big'>스파이시 쉬림프 아보카도</h2>
+			<h4 class=before_small>Spicy Shrimp Avocado</h4>
+			<h4 class=before_calo>289kcal</h4>
+		</div>
+
+		 <div class="after">
+			<h2 class='after_big'>스파이시 쉬림프 아보카도</h2>
+			<h4 class=after_small>Spicy Shrimp Avocado</h4>
+			<p class=after_detail>
+				매콤한 쉬림프와 부~드러운 아보카도가 만나,<br>
+				이국적인 풍미 업!
+			</p>
+			<a href='' target=menu><p class=detail></p></a>
+		</div>
+	</div>
+
+
+	<div class="list">
+		<!-- <img class=index src='./img/new.png' width=80px height=35px> -->
+		<div class='before before02'>
+			<h2 class='before_big'>쉬림프</h2>
+			<h4 class=before_small>Shrimp</h4>
+			<h4 class=before_calo>229kcal</h4>
+		</div>
+
+		 <div class="after">
+			<h2 class='after_big'>쉬림프</h2>
+			<h4 class=after_small>Spicy Shrimp</h4>
+			<p class=after_detail>
+				통새우의 탱글한 식감이 살아있어<br>
+				진짜 새우의 풍미가 가득
+			</p>
+			<a href='' target=menu><p class=detail></p></a>
+		</div>
+	</div>
+
+	<br>
+
+
+	<div class="list">
+		<img class=index src='./img/hot.png' width=80px height=35px>
+		<div class='before before03'>
+			<h2 class='before_big'>애그마요</h2>
+			<h4 class=before_small>Egg Mayo</h4>
+			<h4 class=before_calo>480kcal</h4>
+		</div>
+
+		 <div class="after">
+			<h2 class='after_big'>애그마요</h2>
+			<h4 class=after_small>Egg Mayo</h4>
+			<p class=after_detail>
+				부드러운 달걀과 고소한 마요네즈가 만나 <br>
+				더 부드러운 스테디셀러
+			</p>
+			<a href='' target=menu><p class=detail></p></a>
+		</div>
+	</div>
+
+
+	
+	<div class="list">
+		<!-- <img class=index src='./img/new.png' width=80px height=35px> -->
+		<div class='before before05'>
+			<h2 class='before_big'>비엘티</h2>
+			<h4 class=before_small>B.L.T.</h4>
+			<h4 class=before_calo>380kcal</h4>
+		</div>
+
+		 <div class="after">
+			<h2 class='after_big'>비엘티</h2>
+			<h4 class=after_small>B.L.T.</h4>
+			<p class=after_detail>
+				오리지널 아메리칸 스타일<br>
+				베이컨의 풍미와 바삭함 그대로~
+			</p>
+			<a href='' target=menu><p class=detail></p></a>
+		</div>
+	</div>
+
+
+
+	<div class="list">
+		<!-- <img class=index src='./img/new.png' width=80px height=35px> -->
+		<div class='before before08'>
+			<h2 class='before_big'>참치</h2>
+			<h4 class=before_small>Tuna</h4>
+			<h4 class=before_calo>480kcal</h4>
+		</div>
+
+		 <div class="after">
+			<h2 class='after_big'>참치</h2>
+			<h4 class=after_small>Tuna</h4>
+			<p class=after_detail>
+				남녀노소 누구나 좋아하는 담백한 참치와<br>
+				고소한 마요네즈의 완벽한 조화
+			</p><a href='' target=menu><p class=detail></p></a>
+		</div>
+	</div>
+
+	<br>
+
+
+	<div class="list">
+		<!-- <img class=index src='./img/new.png' width=80px height=35px> -->
+		<div class='before before06'>
+			<h2 class='before_big'>미트볼</h2>
+			<h4 class=before_small>Meatball</h4>
+			<h4 class=before_calo>480kcal</h4>
+		</div>
+
+		 <div class="after">
+			<h2 class='after_big'>미트볼</h2>
+			<h4 class=after_small>Meatball</h4>
+			<p class=after_detail>
+				이탈리안 스타일 비프 미트볼에 풍부한 토마토 향이<br>
+				살아있는 마리나라소스를 듬뿍
+			</p><a href='' target=menu><p class=detail></p></a>
+		</div>
+	</div>
+
+
+	<div class="list">
+		<!-- <img class=index src='./img/new.png' width=80px height=35px> -->
+		<div class='before before07'>
+			<h2 class='before_big'>햄</h2>
+			<h4 class=before_small>Ham</h4>
+			<h4 class=before_calo>290kcal</h4>
+		</div>
+
+		 <div class="after">
+			<h2 class='after_big'>햄</h2>
+			<h4 class=after_small>Ham</h4>
+			<p class=after_detail>
+				기본 중에 기본!<br>
+				풍부한 햄이 만들어내는 입 안 가득 넘치는 맛의 향연
+			</p><a href='' target=menu><p class=detail></p></a>
+		</div>
+	</div>
+
+
+	<div class="list">
+		<img class=index src='./img/hot.png' width=80px height=35px>
+		<div class='before before08'>
+			<h2 class='before_big'>이탈리안 비엠티</h2>
+			<h4 class=before_small>Italian B.M.T.</h4>
+			<h4 class=before_calo>410kcal</h4>
+		</div>
+
+		 <div class="after">
+			<h2 class='after_big'>이탈리안 비엠티</h2>
+			<h4 class=after_small>Italian B.M.T.</h4>
+			<p class=after_detail>
+				페퍼로니, 살라미 그리고 햄이 만들어내는 최상의 조화!<br>
+				전세계가 사랑하는 써브웨이의 베스트셀러!
+			</p><a href='' target=menu><p class=detail></p></a>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div class="list">
+		<!-- <img class=index src='./img/new.png' width=80px height=35px> -->
+		<div class='before before09'>
+			<h2 class='before_big'>로스트 치킨</h2>
+			<h4 class=before_small>Roasted Chicken</h4>
+			<h4 class=before_calo>320kcal</h4>
+		</div>
+
+		 <div class="after">
+			<h2 class='after_big'>로스트 치킨</h2>
+			<h4 class=after_small>Roasted Chicken</h4>
+			<p class=after_detail>
+				건강한 맛 가득!<br>
+				오븐에 구워 담백한 저칼로리 닭가슴살의 건강한 풍미
+			</p>
+			<a href='' target=menu><p class=detail></p></a>
+		</div>
+	</div>
+
+
+	<div class="list">
+		<img class=index src='./img/hot.png' width=80px height=35px>
+		<div class='before before10'>
+			<h2 class='before_big'>스테이크 & 치즈</h2>
+			<h4 class=before_small>Steak & Cheese</h4>
+			<h4 class=before_calo>380kcal</h4>
+		</div>
+
+		 <div class="after">
+			<h2 class='after_big'>스테이크 & 치즈</h2>
+			<h4 class=after_small>Steak & Cheese</h4>
+			<p class=after_detail>
+				육즙이 쫙~풍부한<br>
+				비프 스테이크의 풍미가 입안 한가득
+			</p><a href='' target=menu><p class=detail></p></a>
+		</div>
+	</div>
+
+
+	<div class="list">
+		<!-- <img class=index src='./img/hot.png' width=80px height=35px> -->
+		<div class='before before11'>
+			<h2 class='before_big'>스파이시 이탈리안</h2>
+			<h4 class=before_small>Spicy Italian</h4>
+			<h4 class=before_calo>480kcal</h4>
+		</div>
+
+		 <div class="after">
+			<h2 class='after_big'>스파이시 이탈리안</h2>
+			<h4 class=after_small>Spicy Italian</h4>
+			<p class=after_detail>
+				살라미, 페퍼로니가 입안 한가득!<br>
+				쏘 핫한 이탈리아의 맛
+			</p><a href='' target=menu><p class=detail></p></a>
+		</div>
+	</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/**{
+			border:1px solid red;
+		}*/
+		h1{
+			margin:10px;
+		}
+		.num{
+			width:85px;
+			height: 85px;
+			background-image: url(./img/step_num1-1.png);
+			background-size: 85px 85px;
+			background-repeat: no-repeat;
+			display: inline-block;
+			margin:20px;
+		}
+		.num:hover{
+			background-image: url(./img/step_num1-2.png)
+		}
+		.num.step2{
+			background-image: url(./img/step_num2-1.png);
+		}
+		.num.step2:hover{
+			background-image: url(./img/step_num2-2.png);
+		}
+		.num.step3{
+			background-image: url(./img/step_num3-1.png);
+		}
+		.num.step3:hover{
+			background-image: url(./img/step_num3-2.png);
+		}
+		.num.step4{
+			background-image: url(./img/step_num4-1.png);
+		}
+		.num.step4:hover{
+			background-image: url(./img/step_num4-2.png);
+		}
+		.num.step5{
+			background-image: url(./img/step_num5-1.png);
+		}
+		.num.step5:hover{
+			background-image: url(./img/step_num5-2.png);
+		}
+		iframe{
+			background-color: #f6f6f6;
+		}
+		iframe{
+			background-color: #f6f6f6;
+		}
+	</style>
+</head>
+<body>
+<center>
+	<h1>써브웨이 이용방법</h1>
+	<a href=step1.html target="step_content"><p class='num'></p></a>
+	<a href=step2.html target="step_content"><p class='num step2'></p></a>
+	<a href=step3.html target="step_content"><p class='num step3'></p></a>
+	<a href=step4.html target="step_content"><p class='num step4'></p></a>
+	<a href=step5.html target="step_content"><p class='num step5'></p></a>
+	<br>
+	<iframe name=step_content src="step1.html" width=1500px height="550px" scrolling="no" frameborder="0"></iframe>
+</center>
+</body>
+</html>
